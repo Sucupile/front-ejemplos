@@ -6,3 +6,38 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.form__label{
+    cursor: pointer;
+}
+
+.form__input-error {
+    /*display: none;*/
+}
+
+.form__input-error-activo {
+    display:block;
+}
+
+.form__validacion-estado{
+    right: 10px;
+    bottom: 15px;
+}
+
+
+/* basura */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
