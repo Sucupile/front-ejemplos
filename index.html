@@ -74,10 +74,10 @@
 
         <div class="row">
             <!-- Grupo correo Electronico -->
-            <div class="form__grupo col-md-6 col-12 pe-md-4"  id="grupo__email">
-                <label for="email" class="form__label fw-bold p-1 fs-4">Correo Electrónico</label>
+            <div class="form__grupo  col-md-6 col-12 pe-md-4"  id="grupo__correo">
+                <label for="correo" class="form__label fw-bold p-1 fs-4">Correo Electrónico</label>
                 <div class="form__grupo-input row position-relative">
-                    <input type="email" name="email" class="form__input" id="email" placeholder="abc@cdefg.com">
+                    <input type="email" name="correo" class="form__input" id="correo" placeholder="abc@cdefg.com">
                     <i class="form__validacion-estado fas fa-times-circle"></i>
                 </div>
                 <div class="row col-11">
@@ -99,7 +99,7 @@
         </div>
         
         <!-- Grupo terminos y condiciones -->
-        <div class="form__grupo row text-center" id="grupo__terminos">
+        <div class="form__grupo row text-center mt-4" id="grupo__terminos">
             <label class="form__label" class="form__label fw-bold p-1">
                 <input type="checkbox" class="form__checkbox" name="terminos" id="terminos">
                 Acepto los terminos y condiciones.
@@ -107,19 +107,19 @@
         </div>
 
         <!-- Grupo mensaje de error -->
-        <div class="form__mensaje row text-center" id="form__mensaje">
-            <p>
+        <div class="form__mensaje row text-center mt-4" id="form__mensaje">
+            <p class="pt-3">
                 <i class="fas fa-exclamation-triangle"></i>
                 <b>Error:</b> Por favor rellene el formulario correctamente.
             </p>
         </div>
 
         <!-- Grupo boton -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-4">
             <div class="row col-9 col-md-6 justify-content-center">
                 <div class=" col-12 row text-center form__grupo form__grupo-btn-enviar">
-                    <button  type="submit" class="form__btn btn btn-success">Enviar</button>
-                    <p class="form__mensaje-exito" id="form__mensaje-exito">Formulario enviado exitosamente!</p>
+                    <button  type="button" class="form__btn btn btn-success fw-bold fs-3 rounded-2" id="btn-enviar">Enviar</button>
+                    <p class="form__mensaje-exito fs-6 mt-4 text-success" id="form__mensaje-exito">Formulario enviado exitosamente!</p>
                 </div>
             </div>
         </div>
@@ -183,9 +183,78 @@
     </div>  
 
     <br><br>
+
+    <form class="row g-3" id="form">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">City</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">State</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer05" class="form-label">Zip</label>
+          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+          <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+
+      <!--https://www.youtube.com/watch?v=cEKDyzoTXb4-->
+      <!--https://www.youtube.com/watch?v=s3pC93LgP18-->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/211915026b.js" crossorigin="anonymous"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>

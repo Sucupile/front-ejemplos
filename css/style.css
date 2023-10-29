@@ -11,7 +11,7 @@ body {
 }
 
 .form__input-error {
-    /*display: none;*/
+    display: none;
 }
 
 .form__input-error-activo {
@@ -23,4 +23,42 @@ body {
     right: 12px;
     bottom: 10px;
     width:20px;
+    opacity: 0;
+    z-index: 100;
+}
+
+.form__mensaje{
+    background: #f66060;
+    height: 3em;
+    display: none;
+}
+
+.form__mensaje-activo{
+    display: block;
+}
+
+.form__mensaje-exito{
+    display: none;
+}
+
+.form__mensaje-exito-activo{
+    display: block;
+}
+
+.form__grupo-correcto .form__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto .form__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto .form__label{
+    color: #bb2929;
+}
+
+.form__grupo-incorrecto .form__input{
+    border: 3px solid #bb2929;
 }
